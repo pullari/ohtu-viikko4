@@ -27,6 +27,18 @@ public class Stepdefs {
         WebElement element = driver.findElement(By.linkText("register new user"));       
         element.click();          
     } 
+    
+    @Given("^user with username \"([^\"]*)\" with password \"([^\"]*)\" is successfully created$")
+    public void user_is_succesfully_created(String username, String password) throws Throwable {
+        new_user_is_selected();
+        valid_username_and_password_are_given(username, password);
+    }
+    
+    @Given("^user with username \"([^\"]*)\" and password \"([^\"]*)\" is unsuccessfully created$")
+    public void user_is_unsuccesfully_created(String username, String password) throws Throwable {
+        new_user_is_selected();
+        valid_username_and_password_are_given(username, password);
+    }
 
     @When("^username \"([^\"]*)\" and password \"([^\"]*)\" are given$")
     public void username_and_password_are_given(String username, String password) throws Throwable {
@@ -42,8 +54,6 @@ public class Stepdefs {
     public void valid_username_and_password_are_given(String username, String password) throws Throwable {
         createUserWith(username, password);
     }
-    
-    //valid username "samuli" and valid password "samuli123" are given but confirmation "samuli122" is different
     
     @When("^valid username \"([^\"]*)\" and valid password \"([^\"]*)\" are given but confirmation \"([^\"]*)\" is different$")
     public void valid_username_and_valid_password_are_given_but_confirmation_is_different(String username, String password, String confirmation) throws Throwable {
