@@ -10,6 +10,7 @@ public class ServerRule extends ExternalResource {
     private final int port;
 
     public ServerRule(int port) {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\pullis\\Desktop\\ohtu\\ohtu-viikko4\\chromedriver.exe");
         this.port = port;
     }
 

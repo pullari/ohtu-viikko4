@@ -82,11 +82,11 @@ public class Tester {
         sleep(2);
 
         element = driver.findElement(By.name("username"));
-        element.sendKeys("samuli3");
+        element.sendKeys("samuli");
         element = driver.findElement(By.name("password"));
-        element.sendKeys("salasana3");
+        element.sendKeys("salasana");
         element = driver.findElement(By.name("passwordConfirmation"));
-        element.sendKeys("salasana3");
+        element.sendKeys("salasana");
         element = driver.findElement(By.name("signup"));
         
         sleep(2);
