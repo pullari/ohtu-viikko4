@@ -1,14 +1,15 @@
-.gradle
-build/
+TyhjaProjekti/.gradle
+TyhjaProjekti/build/
 
 # Ignore Gradle GUI config
-gradle-app.setting
+TyhjaProjekti/gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+TyhjaProjekti/!gradle-wrapper.jar
 
 # Cache of project
-.gradletasknamecache
+TyhjaProjekti/.gradletasknamecache
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+/TyhjaProjekti/.nb-gradle/
